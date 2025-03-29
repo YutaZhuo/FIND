@@ -253,10 +253,6 @@ def main(args):
 
 
 if __name__ == '__main__':
-    np.random.seed(0)
-    torch.manual_seed(0)
-    torch.cuda.manual_seed_all(0)
-
     parser = argparse.ArgumentParser()
     parser.add_argument('-n', "--n_cascades", type=int, default=1)
     parser.add_argument("--epochs", type=int, default=2000)
